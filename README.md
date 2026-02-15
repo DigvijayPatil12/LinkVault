@@ -5,7 +5,7 @@
 
 LinkVault is a secure, full-stack file and text sharing application that allows users to upload files or text and generate a unique, temporary sharing link.
 
-It includes enterprise-grade security features such as **Password Protection**, **One-Time Views**, **Access Limits**, and **Automatic Expiry** — making it ideal for private, temporary content sharing.
+It includes enterprise-grade security features such as **Password Protection**, **One-Time Views**, **Access Limits**, and **Automatic Expiry** making it ideal for private, temporary content sharing.
 
 ---
 
@@ -166,5 +166,6 @@ Benefits:
 * Designed strictly for temporary content sharing deleted content is unrecoverable.
 
 ---
+
 
 
