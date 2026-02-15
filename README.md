@@ -167,5 +167,13 @@ Benefits:
 
 ---
 
+## ⚠️ Technical & Design Limitations
+
+* File Size Restrictions: Since we are using the Cloudinary free tier, uploads are typically limited to ~10MB per file. Large files will fail.
+* Atomic One-Time Views: While we set the expiry to "now" after a one-time view, if a user opens the link and keeps the tab open without refreshing, they can still see the content. The "burn" happens on the next request.
+* Memory vs. Scalability: The current background cleanup (cron job) runs within the Node.js process. In a massive production app, this would be moved to a separate worker service so it doesn't slow down the main API.
+* No "Edit" Feature: Once a link is generated, the content is immutable. If you made a typo in your secret text, you have to delete the link using the Admin Token and create a new one.
+---
+
 
 
